@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1 class="logo"><a href="/">Asolatina</a></h1>    
+                <nav>
+                    <ul>
+                        <li class="first"></li>
+                        <li class="separator">@Html.ActionLink("Inicio","Index", "Site")</li>
+                        <li class="separator">@Html.ActionLink("Promociones","Promotions", "Site")</li>
+                        <li class="separator">@Html.ActionLink("Acerca de...","AboutUs", "Site")</li>
+                        <li>@Html.ActionLink("Contáctenos","ContactUs", "Site")</li>
+                        <li class="last"></li>
+                    </ul>
+                </nav>
+            </div>            
+        </header>
+        
+        <div class="banner">
+            <div class="wrapper"><img src="~/Content/themes/base/images/banner1.jpg"/></div>
+        </div>
+        
+        <div class="separator"></div>
+
+        <div class="main">
+            <div class="wrapper">
+                @RenderBody()    
+            </div>            
+        </div>
+
+        <footer>
+            <div class="wrapper">Copyright. Todos los Derechos Reservados.</div>
+        </footer>        
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

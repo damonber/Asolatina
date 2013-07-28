@@ -1,0 +1,201 @@
+﻿html, body, h1, h2, h3, h4, h5, h6, ul , li, a, span, p, table, td, tr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+body {    
+    font-size: .75em;
+    font-family: arial, helvetica, sans-serif;
+    color: #666666;
+    background-color: #e2e2e2;
+}
+
+nav ul,li {
+    height: 100%;
+}
+
+nav li {    
+    float: left;
+    display: inline;
+}
+
+div.wrapper {
+    width: 1000px;
+    margin:0 auto;
+    overflow-y: auto;
+}
+
+div.separator {        
+    height: 5px;
+    margin: 2px 0;
+    background: #565656 url('themes/base/images/separator_bg.jpg') repeat-x;
+}
+
+div.separator.vertical {
+    float: left;
+    height: 100%;
+    width: 5px;
+    margin: 10px 2px;
+    background: #565656 url('themes/base/images/separator_bg.jpg') repeat-x;
+}
+
+div.formContainer label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+div.formContainer td {
+    padding-bottom: 5px;
+}
+
+div.formContainer input[type='button']{    
+    float: right;
+    margin-top: 5px;
+}
+
+header {
+    height: 100px;
+    padding: 20px 0;
+    background: #000000 url('themes/base/images/header_bg.jpg') repeat-x;
+}
+
+header .wrapper h1.logo a {
+    display: block;
+    height: 98px;
+    width: 198px;
+    text-indent: -9999px;
+    border: 1px solid #ffffff;
+    float: left;
+}
+
+header .wrapper nav {
+    float: right;
+    color: #ffffff;
+    font-weight: bold;
+    height: 33px;
+    margin-top: 34px;
+    background: #224b23 url('themes/base/images/nav_bg.png') repeat-x;
+}
+
+header .wrapper nav li {    
+    line-height: 33px;
+    padding: 0 10px;
+}
+
+header .wrapper nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .wrapper nav li.first,
+header .wrapper nav li.last {
+    width: 3px;
+    padding: 0;
+}
+
+header .wrapper nav li.first{
+    background: url('themes/base/images/nav_left.png') no-repeat;
+}
+
+header .wrapper nav li.last{
+    background: url('themes/base/images/nav_right.png') no-repeat right;
+}
+
+header .wrapper nav li.separator {
+    background: url('themes/base/images/nav_separator.png') no-repeat right;
+}
+
+.banner {
+    height: 200px;
+}
+
+.main {
+    /*min-height: 467px;*/
+}
+
+footer {
+    height: 100px;
+    color: #ffffff;
+    line-height: 100px;
+    background: #000000 url('themes/base/images/footer_bg.jpg') repeat-x;
+}
+
+
+.homeContainer {
+    width: 722px;
+    height: 304px;
+    margin: 20px auto;
+}
+
+.homeContainer section{
+    float: left;
+    padding: 0 50px;
+}
+
+.homeContainer section h2 {
+    margin-bottom: 20px;
+}
+
+.homeContainer div.separator.vertical {
+    height: 284px;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
