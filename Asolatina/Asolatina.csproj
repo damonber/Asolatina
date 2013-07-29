@@ -134,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\banner1.jpg" />
+    <Content Include="Content\themes\base\images\banner2.jpg" />
+    <Content Include="Content\themes\base\images\banner3.jpg" />
+    <Content Include="Content\themes\base\images\banner4.jpg" />
     <Content Include="Content\themes\base\images\footer_bg.jpg" />
     <Content Include="Content\themes\base\images\header_bg.jpg" />
     <Content Include="Content\themes\base\images\nav.png" />
