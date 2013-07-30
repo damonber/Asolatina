@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")    
+    @Scripts.Render("~/bundles/modernizr")       
+</head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1 class="logo"><a href="/">Asulatina</a></h1>    
+                <nav>
+                    <ul>
+                        <li class="first"></li>
+                        <li class="separator">@Html.ActionLink("Inicio","Index", "Site")</li>
+                        <li class="separator">@Html.ActionLink("Promociones","Promotions", "Site")</li>
+                        <li class="separator">@Html.ActionLink("Acerca de...","AboutUs", "Site")</li>
+                        <li>@Html.ActionLink("Contáctenos","ContactUs", "Site")</li>
+                        <li class="last"></li>
+                    </ul>
+                </nav>
+            </div>            
+        </header>
+        
+        <div class="separator"></div>
+
+        <div class="banner">
+            <div class="imagesContainer">
+                <img src="~/Content/themes/base/images/banner1.jpg"/>
+                <img src="~/Content/themes/base/images/banner2.jpg"/>
+                <img src="~/Content/themes/base/images/banner3.jpg"/>
+                <img src="~/Content/themes/base/images/banner4.jpg"/>
+            </div>            
+            <ul><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li></ul>
+        </div>
+        
+        <div class="main">
+            <div class="wrapper">
+                @RenderBody()    
+            </div>            
+        </div>
+        
+        <div class="clear"></div>
+
+        <footer>
+            <div class="wrapper">Copyright. Todos los Derechos Reservados.</div>
+        </footer>        
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @RenderSection("scripts", required: false)
+        <script type="text/javascript">
+            var currentIndex = 0;
+            var maxIndex = 0;
+            var imagesLoopId = null;
+
+            $(document).ready(function() {
+                $('.banner img:gt(0)').hide();
+                $('.banner li:eq(0)').addClass('current');
+                maxIndex = $('.banner li').length - 1;
+
+                $('.banner li').click(function () {
+                    currentIndex = $('.banner li').index($(this));
+
+                    clearInterval(imagesLoopId);
+                    
+                    ShowPicture(currentIndex);
+
+                    StartImagesLoop();
+                });
+
+                StartImagesLoop();
+            });
+
+            function ShowPicture(index) {
+                $('.banner img').hide();
+                $('.banner li').removeClass('current');
+
+                $('.banner img:eq(' + currentIndex + ')').show();
+                $('.banner li:eq(' + currentIndex + ')').addClass('current');
+            }
+            
+            function StartImagesLoop() {
+                imagesLoopId = setInterval(function () {
+                                    if (currentIndex == maxIndex) {
+                                        currentIndex = 0;
+                                    } else {
+                                        currentIndex++;
+                                    }
+
+                                    ShowPicture(currentIndex);
+                                }, 3000);
+            }
+        </script>
+    </body>
+</html>
