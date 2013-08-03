@@ -138,13 +138,9 @@
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\arr-footer-col.png" />
     <Content Include="Content\themes\base\images\arr-ico.png" />
-    <Content Include="Content\themes\base\images\banner1.jpg" />
     <Content Include="Content\themes\base\images\banner1.png" />
-    <Content Include="Content\themes\base\images\banner2.jpg" />
     <Content Include="Content\themes\base\images\banner2.png" />
-    <Content Include="Content\themes\base\images\banner3.jpg" />
     <Content Include="Content\themes\base\images\banner3.png" />
-    <Content Include="Content\themes\base\images\banner4.jpg" />
     <Content Include="Content\themes\base\images\body.png" />
     <Content Include="Content\themes\base\images\col-img1.png" />
     <Content Include="Content\themes\base\images\col-img2.png" />
@@ -156,9 +152,7 @@
     <Content Include="Content\themes\base\images\footer-bottom.png" />
     <Content Include="Content\themes\base\images\footer-cols.png" />
     <Content Include="Content\themes\base\images\footer-lights.png" />
-    <Content Include="Content\themes\base\images\footer_bg.jpg" />
     <Content Include="Content\themes\base\images\grey-btn.png" />
-    <Content Include="Content\themes\base\images\header_bg.jpg" />
     <Content Include="Content\themes\base\images\john-ico.png" />
     <Content Include="Content\themes\base\images\logo%402x.png" />
     <Content Include="Content\themes\base\images\logo.png" />
@@ -173,12 +167,7 @@
     <Content Include="Content\themes\base\images\nav-arr%402x.png" />
     <Content Include="Content\themes\base\images\nav-arr.png" />
     <Content Include="Content\themes\base\images\nav-border.png" />
-    <Content Include="Content\themes\base\images\nav.png" />
     <Content Include="Content\themes\base\images\navigation.png" />
-    <Content Include="Content\themes\base\images\nav_bg.png" />
-    <Content Include="Content\themes\base\images\nav_left.png" />
-    <Content Include="Content\themes\base\images\nav_right.png" />
-    <Content Include="Content\themes\base\images\nav_separator.png" />
     <Content Include="Content\themes\base\images\promo_playa.jpg" />
     <Content Include="Content\themes\base\images\promo_restaurante.jpg" />
     <Content Include="Content\themes\base\images\promo_tour.JPG" />
@@ -206,8 +195,6 @@
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_76_E9E9E9_1x400.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
@@ -240,8 +227,6 @@
     <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_glass_76_E9E9E9_1x400.png" />
     <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
