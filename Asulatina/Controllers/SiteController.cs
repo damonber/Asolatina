@@ -16,6 +16,11 @@ namespace Asulatina.Controllers
             return View("Home");
         }
 
+        public ActionResult Home()
+        {
+            return View("Home");
+        }
+
         public ActionResult Promotions()
         {
             return View("Promotions");

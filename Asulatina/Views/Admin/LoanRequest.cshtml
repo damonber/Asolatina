@@ -2,26 +2,32 @@
     ViewBag.Title = "Solicitud de préstamo";
 }
 
-<div class="loanRequestContainer">    
-    <section>
-        <h2>Solicitud de préstamo</h2>
-        <div class="formContainer">
-            <table>
-                <tr>
-                    <td><label for="amount">Monto</label></td>
-                    <td><input id="amount" name="amount" type="text"/></td>
-                </tr>
-                <tr>
-                    <td><label for="type">Tipo de préstamo</label></td>
-                    <td>
-                        <select id="type" name="type">
-                            <option value="0">Personal</option>    
-                            <option value="1">Refundición</option>    
-                        </select>
-                    </td>
-                </tr>           
-            </table>
-            <input id="btnSubscribe" type="button" value="Enviar solicitud"/>
-        </div>
-    </section>
-</div>
+<section>
+    <h2>Solicitud de préstamo</h2>
+    <div class="formContainer">
+        <table>
+            <tr>
+                <td style="width: 140px"><label for="amount">Monto</label></td>
+                <td><input id="amount" name="amount" type="text"/></td>
+            </tr>
+            <tr>
+                <td><label for="type">Tipo de préstamo</label></td>
+                <td>
+                    <select id="type" name="type">
+                        <option value="0">Personal</option>    
+                        <option value="1">Refundición</option>    
+                    </select>
+                </td>
+            </tr>           
+        </table>
+        <input id="btnSubscribe" type="button" value="Enviar solicitud"/>
+    </div>
+</section>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SetCurrentTab('tabLoanRequest');
+        });        
+    </script>
+}
